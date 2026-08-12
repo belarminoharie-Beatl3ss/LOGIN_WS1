@@ -11,7 +11,7 @@
 <body>
   
   <div class="container">
-    <form>
+    <form action="insert.php" method="post">
       
       <div>
         <h1>Registration</h1>
@@ -23,6 +23,12 @@
         <input type="text" name="lastname" id="lastname" placeholder="Last Name" required />
         <input type="number" name="age" id="age" placeholder="Age" required/>
         <input type="tel" name="phonenum" id="phonenum" placeholder="Cellphone Number"/>
+
+        <select>
+          <option value="">Select Role</option>
+          <option value="">Student</option>
+          <option value="">Teacher</option>
+        </select>
         
         <input type="password" name="password" id="password" placeholder="Password" required/>
         
