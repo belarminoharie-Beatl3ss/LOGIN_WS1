@@ -9,16 +9,17 @@ body {
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color: dimgray;
+    background-color: #222831;
   }
 
 .container{text-align:center;}
 
 form {
     width:500px;
-    background: whitesmoke ;
+    background:#393E46;
     padding:40px;
     border-radius:20px;
+    color: white;
   }
   
   .profile {
@@ -46,9 +47,10 @@ button{
     font-size:18px;
     border-radius:8px;
     cursor:pointer;
-    background: blue ;
+    background: #00ADB5;
   }
   
   a{
     text-decoration: none;
+    color: #00ADB5;
   }
