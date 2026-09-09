@@ -58,11 +58,11 @@ $_SESSION["role"] = $role;
 switch ($role) {
 
     case "admin":
-        header("Location: dashboard/admin/");
+        header("Location: dashboard/admin-dashboard/admin-dashboard.php");
         break;
 
     case "staff":
-        header("Location: dashboard/staff/");
+        header("Location: dashboard/staff-dashboard/staff-dashboard.php");
         break;
 
     case "user":
