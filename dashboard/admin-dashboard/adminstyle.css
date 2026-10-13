@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background: #eef2f7;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background: #333;
+    color: white;
+    padding: 25px 15px;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    margin-bottom: 25px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+    padding: 12px;
+    background: #222;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background: #555;
+}
+
+.contents {
+    flex: 1;
+    padding: 40px;
+}
+
+.box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.box h1,
+.box h2 {
+    margin-bottom: 10px;
+}
+
+.box p {
+    margin-bottom: 8px;
+}
+
+/* Account Management Form */
+
+.contents form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.contents form label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.contents form input,
+.contents form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: white;
+}
+
+.contents form input:focus,
+.contents form select:focus {
+    outline: none;
+    border-color: #0d3b82;
+}
+
+.contents form button {
+    padding: 12px;
+    margin-top: 10px;
+    background: #0d3b82;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contents form button:hover {
+    background: #092b60;
+}
+
+/* Account Management Messages */
+
+.contents .success {
+    color: #166534;
+    background: #dcfce7;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.contents .error {
+    color: #b91c1c;
+    background: #fee2e2;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+/* Existing Accounts Table */
+
+.contents table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.contents th,
+.contents td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.contents th {
+    background: #333;
+    color: white;
+}
+
+.contents tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.contents tbody tr:hover {
+    background: #e5e7eb;
+}
+
+/* Smaller screens */
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 180px;
+        padding: 20px 10px;
+    }
+
+    .contents {
+        padding: 20px;
+        min-width: 0;
+    }
+
+    .box {
+        padding: 18px;
+        overflow-x: auto;
+    }
+
+    .contents table {
+        min-width: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .contents {
+        padding: 15px;
+    }
+}

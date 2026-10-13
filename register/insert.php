@@ -26,7 +26,7 @@ if (
     die("Please fill in all required fields.");
 }
 
-// Check password confirmation
+//password confirmation
 if ($password !== $passwordverify) {
     die("Passwords do not match.");
 }

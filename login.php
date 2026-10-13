@@ -44,25 +44,25 @@ if (!$stmt->fetch()) {
 $stmt->close();
 $conn->close();
 
-// Check the password
+// Check password
 if (!password_verify($password, $dbPassword)) {
     die("Invalid username or password.");
 }
 
-// Create the login session
+// Create login session
 $_SESSION["user_id"] = $id;
 $_SESSION["username"] = $dbUsername;
 $_SESSION["role"] = $role;
 
-// Redirect based on account role
+// roles
 switch ($role) {
 
     case "admin":
-        header("Location: dashboard/admin/");
+        header("Location: dashboard/admin-dashboard/admin-dashboard.php");
         break;
 
     case "staff":
-        header("Location: dashboard/staff/");
+        header("Location: dashboard/staff-dashboard/staff-dashboard.php");
         break;
 
     case "user":
@@ -73,7 +73,6 @@ switch ($role) {
         session_destroy();
         die("Invalid account role.");
 }
-
 exit();
 
 ?>
