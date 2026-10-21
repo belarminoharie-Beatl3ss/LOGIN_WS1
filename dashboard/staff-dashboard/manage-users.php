@@ -136,8 +136,8 @@ $accounts = $conn->query(
 
         <a href="staff-dashboard.php">Home</a>
         <a href="manage-users.php">Manage Users</a>
-        <a href="#">Profile</a>
-        <a href="#">Settings</a>
+        <a href="profile-staff.php">Profile</a>
+        <a href="settings-staff.php">Settings</a>
         <a href="../../logout.php">Logout</a>
     </div>
 
